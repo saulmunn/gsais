@@ -67,11 +67,3 @@ If you want to add images to the website:
 1. Create an `img` folder in the same directory as the `index.html` file
 2. Add your images to this folder
 3. Reference them in the HTML using relative paths, e.g., `<img src="img/logo.png" alt="GSAIS Logo">`
-
-## License
-
-This website template is available for use by the Guaranteed Safe AI Summit organization.
-
-## Contact
-
-For more information, please contact info@gsais.org (placeholder email).
