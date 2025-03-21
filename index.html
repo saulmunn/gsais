@@ -105,6 +105,17 @@
         margin-bottom: 1.5rem;
       }
 
+      .about-image-container {
+        max-width: 800px; /* Adjust based on actual text width */
+        margin: 0 auto; /* Centers the image */
+      }
+
+      .about-image {
+        width: 100%; /* Makes it scale to the container */
+        height: auto; /* Maintains aspect ratio */
+        display: block;
+      }
+
       .btn {
         display: inline-block;
         background-color: var(--accent-color);
@@ -199,38 +210,44 @@
 
     <main class="container">
       <section id="about">
-        <h2>About the Summit</h2>
+        <h2>About the March 2025 Summit</h2>
         <p>
-          The <strong>Guaranteed Safe AI Summit (GSAIS)</strong> is a 2-day
-          gathering of the leading researchers, funders, and industry leaders at
-          the forefront of the field of <a href="#gsai">guaranteed safe AI</a>.
-          The summit aims to advance research, collaboration, and forward
-          progress in the field through dedicated planning sessions, open
-          discussions, and social events.
+          The <strong>Guaranteed Safe AI (GSAI) Summit</strong> was a 2-day
+          gathering in San Francisco on March 8-9, 2025.  Leading researchers, funders, 
+          and experts of industry gathered to identify bottlenecks and advance the 
+          paradigm of <a href="#gsai">guaranteed safe AI</a>.
+          The summit set out to advance research, collaboration, and forward
+          progress in the field.  The agenda included multiple breakout sessions for structured discussions, unstructured time for collaborations, and presentations from Yoshua Bengio, Stuart Russell, Luke Ong, Max Tegmark, Dawn Song, Steve Omohundro, Clark Barrett, davidad, and Sanjit Seshia.
+        </p>
+          <div class="about-image-container">
+            <img src="gsai-summit-group-crop.jpeg" alt="GSAIS Logo" class="about-image" />
+          </div>
+        <p>
+          Given attendee interest, we are looking into organizing a subsequent event in the fall.
         </p>
       </section>
-
+     
       <section id="gsai">
-        <h2>Guaranteed Safe AI Research</h2>
+        <h2>The Guaranteed Safe AI Framework</h2>
         <p>
-          Guaranteed Safe AI (GSAI) is an emerging approach to AI safety that
-          aims to equip AI systems with formally verified safety guarantees.
+          Guaranteed Safe AI (GSAI) is an emerging framework that provides quantifiable guarantees of AI safety.  
         </p>
 
         <p>
           As AI systems become more powerful and autonomous, traditional
-          empirical safety assessment methods become increasingly insufficient
-          to protect against e.g. adversarial attacks or deceptive alignment.
-          GSAI offers a path to rigorous safety guarantees by making explicit
-          the assumptions about the world and formalizing safety specifications,
-          then proving compliance.
+          empirical safety assessment methods like red-teaming and evals become increasingly insufficient to mitigate risks from misalignment or misuse.
+        </p>
+        <p>
+          Approaches that follow the GSAI framework aim to provide the level of quantitative safety guarantees we've come to expect from other engineered systems. This is achieved with three core components: an auditable, separable world model, a way to describe what portions of the state space are "safe" and "unsafe," and a verifier (which provides an auditable proof certificate that the output satisfy the safety specification in the world model).
         </p>
         <p>
           For more on GSAI, take a look at the seminal paper
-          <a href="https://arxiv.org/pdf/2405.06624" target="_blank"
+          <a href="https://arxiv.org/abs/2405.06624" target="_blank"
             >Towards Guaranteed Safe AI: A Framework for Ensuring Robust and
             Reliable AI Systems</a
-          >.
+          >.  And if you'd like to join or support this research effort, we also have 
+          <a href="https://groups.google.com/g/guaranteed-safe-ai/" target="_blank" 
+            >a public email list</a>.  
         </p>
       </section>
 
@@ -238,28 +255,28 @@
         <h2>Organizers</h2>
         <div class="organizers">
           <div class="organizer">
-            <h3>
+            <h4>
               <a
                 href="https://www.linkedin.com/in/evan-miyazono/"
                 target="_blank"
                 style="color: var(--secondary-color); text-decoration: none"
                 >Evan Miyazono</a
               >
-            </h3>
+            </h4>
             <p>
               Evan is the founder & CEO of <a href="https://atlascomputing.org/">Atlas Computing</a>, an R&D nonprofit prototyping AI-powered tools to generate formal specifications.
               Evan previously led initiatives at <a href="https://www.protocol.ai/">Protocol Labs</a>, an innovation network driving breakthroughs in computing, to push humanity forward.
             </p>
           </div>
           <div class="organizer">
-            <h3>
+            <h4>
               <a
                 href="https://nora-ammann.replit.app/"
                 target="_blank"
                 style="color: var(--secondary-color); text-decoration: none"
                 >Nora Ammann</a
               >
-            </h3>
+            </h4>
             <p>
               Nora focuseses on developing quantitative safety guarantees for AI systems at the <a href="https://www.aria.org.uk/programme-safeguarded-ai/" target="_blank">Safeguarded AI programme</a> at the UK's
               Advanced Research and Invention Agency (ARIA). She also
@@ -268,14 +285,14 @@
             </p>
           </div>
           <div class="organizer">
-            <h3>
+            <h4>
               <a
                 href="https://www.linkedin.com/in/bgoldhaber/"
                 target="_blank"
                 style="color: var(--secondary-color); text-decoration: none"
                 >Ben Goldhaber</a
               >
-            </h3>
+            </h4>
             <p>
               Ben is the Projects Lead at the <a href="https://www.flf.org/" target="_blank">Future of Life Foundation</a>. 
               Previously, he was the cofounder & board member of the <a href="https://quantifieduncertainty.org/" target="_blank">Quantified Research Institute</a> and the director of <a href="https://far.ai/" target="_blank">FAR AI</a>, an AI safety research lab that incubates and accelerates research agendas that are too resource-intensive for academia but not yet ready for commercialisation by industry.
@@ -287,13 +304,9 @@
       <section id="sponsors">
         <h2>Sponsors</h2>
         <p>
-          The Guaranteed Safe AI Summit is made possible through the generous
-          support of:
+          The Guaranteed Safe AI Summit was made possible through the generous
+          support of <strong><a href="https://www.beneficialaifoundation.org/" target="_blank">The Beneficial AI Foundation</a></strong>, and generously hosted by <strong><a href="https://www.futurehouse.org/" target="_blank">FutureHouse</a></strong>
         </p>
-        <ul style="margin-left: 2rem">
-          <li><strong><a href="https://www.beneficialaifoundation.org/" target="_blank">Beneficial AI Foundation</a></strong></li>
-          <li><strong><a href="https://space.mit.edu/home/tegmark/" target="_blank">Max Tegmark</a></strong></li>
-        </ul>
       </section>
     </main>
 
@@ -301,7 +314,7 @@
       <p>
         For more information, reach out to Evan Miyazono (evan <i>at</i> atlascomputing <i>dot</i> org).
       </p>
-      <p style="font-size: 0.7em; color: #a8b5c3">Website built by <a href="https://www.cursor.com/en">Cursor</a> (with help from <a href="https://saulmunn.com">Saul</a>).</p>
+      <p style="font-size: 0.7em; color: #a8b5c3">Website built by <a href="https://www.cursor.com/en">Cursor</a>, <a href="https://saulmunn.com">Saul</a>, and Evan.</p>
     </footer>
   </body>
 </html>
